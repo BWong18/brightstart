@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:calendarview="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Header with Back Arrow and Title -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:background="#FCFE82">
+
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="320dp"
+            android:padding="12dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/ivCalendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="Calendar"
+            android:textColor="#414037"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/ivNotification"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="52dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_notification" />
+
+        <ImageView
+            android:id="@+id/ivSignOut"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_sign_out" />
+
+    </RelativeLayout>
+
+    <!-- Content Wrapper -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!-- MaterialCalendarView -->
+        <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:mcv_arrowColor="@color/purple_500"
+            app:mcv_dateTextAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:mcv_headerTextAppearance="@style/TextAppearance.AppCompat.Large"
+            app:mcv_selectionColor="@color/purple_500"
+            app:mcv_showOtherDates="all"
+            app:mcv_weekDayTextAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        style="@style/BottomNavIconSize"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FCFE82"
+        app:menu="@menu/bottom_nav_menu"
+        tools:ignore="VisualLintBottomNav" />
+
+</LinearLayout>

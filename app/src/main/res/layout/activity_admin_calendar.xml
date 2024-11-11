@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:calendarview="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Header with Back Arrow and Title -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:background="#FCFE82">
+
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="320dp"
+            android:padding="12dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/ivAdminCalendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="Calendar"
+            android:textColor="#414037"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/ivSignOut"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_sign_out" />
+
+    </RelativeLayout>
+    <!-- Content Wrapper -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!-- MaterialCalendarView -->
+        <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            app:mcv_arrowColor="@color/purple_500"
+            app:mcv_dateTextAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:mcv_headerTextAppearance="@style/TextAppearance.AppCompat.Large"
+            app:mcv_selectionColor="@color/purple_500"
+            app:mcv_showOtherDates="all"
+            app:mcv_weekDayTextAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+
+        <!-- Add Event Button -->
+        <Button
+            android:id="@+id/buttonAddEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="16dp"
+            android:backgroundTint="#3F51B5"
+            android:text="Add Event" />
+    </LinearLayout>
+
+    <!-- Footer - Bottom Navigation -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/AdminbottomNavigationView"
+        style="@style/BottomNavIconSize"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FCFE82"
+        app:menu="@menu/admin_bottom_nav_menu"
+        tools:ignore="VisualLintBottomNav" />
+
+</LinearLayout>

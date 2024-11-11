@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">BrightStart</string>
+    <string name="title_home">Home</string>
+    <string name="title_chat">Chat</string>
+    <string name="title_profile">Profile</string>
+    <string-array name="gender_options">
+        <item>Choose</item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+    <!-- res/values/strings.xml -->
+    <string-array name="relationship_with_child_options">
+        <item>Choose</item>
+        <item>Father</item>
+        <item>Mother</item>
+        <item>Guardian</item>
+    </string-array>
+
+
+</resources>

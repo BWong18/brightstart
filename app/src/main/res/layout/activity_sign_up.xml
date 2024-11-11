@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!-- Logo -->
+
+        <!-- Sign Up Text -->
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="263dp"
+            android:layout_height="136dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Sign Up"
+            android:textColor="#414037"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <!-- Name EditText -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="start"
+            android:text="Name"
+            android:textColor="#414037"
+            android:textSize="18sp" />
+
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edit_text_background"
+            android:hint="Enter Your Name"
+            android:minHeight="48dp"
+            android:padding="10dp" />
+
+        <!-- Email EditText -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="start"
+            android:text="Email"
+            android:textColor="#414037"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edit_text_background"
+            android:hint="Enter Your Email"
+            android:minHeight="48dp"
+            android:padding="10dp" />
+
+        <!-- Phone EditText -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="start"
+            android:text="Phone Number"
+            android:textColor="#414037"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/etPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edit_text_background"
+            android:hint="Enter Your Phone Number"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            tools:ignore="VisualLintTextFieldSize" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="start"
+            android:text="Password"
+            android:textColor="#414037"
+            android:textSize="18sp" />
+
+        <!-- Password EditText with toggle button -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            tools:ignore="ExtraText">
+
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_background"
+                android:hint="Enter Your Password"
+                android:inputType="textPassword"
+                android:minHeight="48dp"
+                android:paddingEnd="50dp"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/tvTogglePassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_vertical"
+                android:padding="12dp"
+                android:text="Show"
+                android:textColor="#000000" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="start"
+            android:text="Comfirmed Password"
+            android:textColor="#414037"
+            android:textSize="18sp" />
+
+        <!-- Confirm Password EditText with toggle button inside the field -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+            <EditText
+                android:id="@+id/etConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_background"
+                android:hint="Confirm Your Password"
+                android:inputType="textPassword"
+                android:minHeight="48dp"
+                android:paddingEnd="50dp"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/tvToggleConfirmPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_vertical"
+                android:padding="12dp"
+                android:text="Show"
+                android:textColor="#000000" />
+        </FrameLayout>
+
+        <!-- Sign Up Button -->
+        <Button
+            android:id="@+id/btnSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#3F51B5"
+            android:padding="15dp"
+            android:text="Sign Up"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <!-- Login Link -->
+        <TextView
+            android:id="@+id/tvLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:minHeight="48dp"
+            android:onClick="onLoginClick"
+            android:paddingTop="20dp"
+            android:text="Have an account? Log in"
+            android:textAllCaps="false"
+            android:textColor="#3F51B5" />
+    </LinearLayout>
+
+</ScrollView>

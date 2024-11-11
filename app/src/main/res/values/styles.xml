@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BottomNavIconSize" parent="Widget.Design.BottomNavigationView">
+        <item name="itemIconSize">@dimen/bottom_nav_icon_size</item>
+    </style>
+</resources>
+
+

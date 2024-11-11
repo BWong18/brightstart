@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".DashboardActivity">
+
+    <!-- Top Bar with Dashboard title and notification bell -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:background="#FCFE82">
+
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="320dp"
+            android:padding="12dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/billing_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="Billing"
+            android:textColor="#414037"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/ivSignOut"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_sign_out" />
+
+    </RelativeLayout>
+
+
+    <!-- Billing Options -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/tvAdminDashboardTitle"
+        android:layout_marginTop="16dp"
+        tools:ignore="NotSibling">
+
+        <TextView
+            android:id="@+id/tvTuitionBilling"
+            android:layout_width="match_parent"
+            android:layout_height="83dp"
+            android:layout_marginTop="70dp"
+            android:background="#FFF"
+            android:onClick="goToTuitionBilling"
+            android:padding="16dp"
+            android:text="Tuition Billing"
+            android:textColor="#000"
+            android:textSize="22sp"
+            tools:ignore="DuplicateClickableBoundsCheck,OnClick" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#000"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp" />
+
+        <TextView
+            android:id="@+id/tvPaymentConfirmation"
+            android:layout_width="match_parent"
+            android:layout_height="87dp"
+            android:background="#FFF"
+            android:onClick="goToPaymentConfirmation"
+            android:padding="16dp"
+            android:text="Bill Confirmation"
+            android:textColor="#000"
+            android:textSize="22sp"
+
+            tools:ignore="OnClick" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#000"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp" />
+    </LinearLayout>
+
+    <!-- Bottom Navigation -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/AdminbottomNavigationView"
+        style="@style/BottomNavIconSize"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:background="#FCFE82"
+        app:menu="@menu/admin_bottom_nav_menu"
+        tools:ignore="VisualLintBottomNav" />
+
+</RelativeLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvChildName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Child Name: "
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date: "
+            android:textSize="14sp"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/tvHomework"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Homework: "
+            android:textSize="14sp"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/tvMeals"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Meals: "
+            android:textSize="14sp"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/tvMood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mood: "
+            android:textSize="14sp"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/tvPerformance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Performance: "
+            android:textSize="14sp"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/tvTuition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tuition: "
+            android:textSize="14sp"
+            android:layout_marginTop="4dp" />
+
+        <!-- Optional: Add ImageViews for the images -->
+        <ImageView
+            android:id="@+id/imageView0"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="8dp"
+            android:scaleType="centerCrop" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

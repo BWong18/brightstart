@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="8dp"
+    android:padding="8dp">
+
+    <!-- Time TextView (outside the event box) -->
+    <TextView
+        android:id="@+id/timetable_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8:00 a.m. - 9:30 a.m."
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:layout_marginBottom="4dp" />
+
+    <!-- Event TextView (inside the colored box) -->
+    <TextView
+        android:id="@+id/timetable_event"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Homework Coaching Session"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:padding="16dp"
+        android:background="@drawable/timetable_item_background"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="4dp" />
+
+</LinearLayout>
+
+

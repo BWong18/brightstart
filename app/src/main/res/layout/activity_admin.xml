@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="0dp">
+
+    <!-- Header with Back Arrow and Title -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:background="#FCFE82">
+
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="320dp"
+            android:padding="12dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/tvChat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="Admin Chats"
+            android:textColor="#414037"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- New Message Indicator (Green Dot) -->
+        <ImageView
+            android:id="@+id/newMessageIndicator"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_toEndOf="@id/tvChat"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="34dp"
+            android:background="@drawable/ic_green_dot"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/ivSignOut"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_sign_out" />
+    </RelativeLayout>
+
+    <!-- Content Wrapper -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/textViewAdminTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:text="Admin Chats"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- New Message Indicator in the List -->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewUsers"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <!-- Footer - Bottom Navigation -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/AdminbottomNavigationView"
+        style="@style/BottomNavIconSize"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:background="#FCFE82"
+        app:menu="@menu/admin_bottom_nav_menu"
+        tools:ignore="VisualLintBottomNav" />
+
+</LinearLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.brightstart">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Brightstart">
+        <activity
+            android:name=".AdminActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CalendarHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DailyReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BillingHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NotificationMenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ForgotPassword"
+            android:exported="false" />
+        <activity
+            android:name=".AdminNavigationProfile"
+            android:exported="false" />
+        <activity
+            android:name=".StudentInfoName"
+            android:exported="false" />
+        <activity
+            android:name=".KidsInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminStudentInfo"
+            android:exported="false" />
+        <activity
+            android:name=".StudentNameReport"
+            android:exported="false" />
+        <activity
+            android:name=".AdminConfirmPaymentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BillingDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PaymentConfirmationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TuitionBillingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminNotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminCalendarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminBillingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminAttendanceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminTimetableActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChildProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ParentsProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NavigationProfile"
+            android:exported="false" />
+        <activity
+            android:name=".navigation_chat"
+            android:exported="false" />
+        <activity
+            android:name=".navigation_home"
+            android:exported="false" />
+        <activity
+            android:name=".ReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CalendarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BillingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AttendanceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TimetableActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SignUpActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

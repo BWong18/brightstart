@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "473440862307",
+    "project_id": "bright-start-7736a",
+    "storage_bucket": "bright-start-7736a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:473440862307:android:4390ba8331f8cdbea0b856",
+        "android_client_info": {
+          "package_name": "com.example.brightstart"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHhE7L0I5f5OhuYgBR6484OLiZsVsVJVw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

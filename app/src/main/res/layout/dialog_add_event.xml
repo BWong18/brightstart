@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- Event Title -->
+    <EditText
+        android:id="@+id/editTextTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Event Title"
+        android:inputType="textPersonName"
+        android:minHeight="48dp" />
+
+    <!-- Event Description -->
+    <EditText
+        android:id="@+id/editTextDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Event Description"
+        android:inputType="textMultiLine"
+        android:minHeight="48dp" />
+
+    <!-- Event Date -->
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:focusable="false"
+        android:hint="Event Date (yyyy-MM-dd)"
+        android:inputType="datetime"
+        android:minHeight="48dp" />
+
+</LinearLayout>

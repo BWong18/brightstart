@@ -1,0 +1,11 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Background for Paid status (Enabled state) -->
+    <item android:drawable="@color/paid_status_color" android:state_enabled="true" />
+
+    <!-- Background for Pending status (Disabled state) -->
+    <item android:drawable="@color/pending_status_color" android:state_enabled="false" />
+
+</selector>
+
+

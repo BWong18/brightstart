@@ -1,0 +1,268 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".DashboardActivity">
+
+    <!-- Top Bar with Dashboard title and notification bell -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:background="#FCFE82">
+
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="320dp"
+            android:padding="12dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/tvPaymentConfirmation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="Bill Confirmation"
+            android:textColor="#414037"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+
+        <ImageView
+            android:id="@+id/ivSignOut"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_sign_out" />
+
+    </RelativeLayout>
+    <!-- Header Section -->
+    <TextView
+        android:id="@+id/tv_student_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="8dp"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:layout_marginTop="90dp"
+        android:textStyle="bold" />
+
+    <!-- Month/Year -->
+    <TextView
+        android:id="@+id/tv_month_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="October 2024"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:layout_marginTop="160dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="15dp"  />
+
+    <!-- Divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#000000"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="150dp"/>
+
+    <!-- Fee Details Section -->
+    <LinearLayout
+        android:layout_width="396dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:background="#E0E0E0"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:padding="16dp">
+
+        <!-- Fees Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Fees"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Tuition Fee -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Tuition"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_tuition_fee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="350.00"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+
+        <!-- Other Fees Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:text="Other Fees"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Meals Fee -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Meals"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_meals_fee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="150.00"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- Transportation Fee -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Transportation"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_transportation_fee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="50.00"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- Resource Fee -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Resource Fee"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_resource_fee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="50.00"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- Total Fee -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Total:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_total_fee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RM550.00"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Payment Status -->
+
+    <!-- Confirm Paid Button -->
+    <TextView
+        android:id="@+id/tv_payment_status"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="450dp"
+        android:text="Payment Pending"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btn_confirm_paid"
+        android:layout_width="352dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="550dp"
+        android:backgroundTint="#3F51B5"
+        android:text="Confirm Paid"
+
+        android:textColor="#FFFFFF" />
+
+
+    <!-- Bottom Navigation -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/AdminbottomNavigationView"
+        style="@style/BottomNavIconSize"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:background="#FCFE82"
+        app:menu="@menu/admin_bottom_nav_menu"
+        tools:ignore="VisualLintBottomNav" />
+
+</RelativeLayout>

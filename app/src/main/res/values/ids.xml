@@ -1,0 +1,3 @@
+<resources>
+    <item name="paymentStatusMessage" type="id"/>
+</resources>

@@ -1,0 +1,145 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Child Profile"
+            android:textColor="#414037"
+            android:textSize="22sp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold" />
+
+        <!-- Name EditText -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Name"
+            android:textColor="#414037"
+            android:layout_marginTop="30dp"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/etChildName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edit_text_background"
+            android:hint="Enter Child's Name"
+            android:minHeight="48dp"
+            android:padding="10dp" />
+
+        <!-- Parent's Name EditText -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Parent's Name"
+            android:textColor="#414037"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/etParentName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edit_text_background"
+            android:hint="Enter Parent's Name"
+            android:minHeight="48dp"
+            android:padding="10dp" />
+
+        <!-- Date of Birth EditText -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Date of Birth"
+            android:textColor="#414037"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/etDateOfBirth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edit_text_background"
+            android:hint="Enter Date of Birth"
+            android:minHeight="48dp"
+            android:padding="10dp" />
+
+        <!-- Age EditText -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Age"
+            android:textColor="#414037"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/etAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edit_text_background"
+            android:hint="Enter Age"
+            android:minHeight="48dp"
+            android:inputType="number"
+            android:padding="10dp" />
+
+        <!-- Gender Spinner -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Gender"
+            android:textColor="#414037"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/spGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/edit_text_background"
+            android:minHeight="48dp" />
+
+        <Button
+            android:id="@+id/btnAddAnotherChild"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#3F51B5"
+            android:padding="15dp"
+            android:text="Add Another Child"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="50dp"
+            android:textSize="18sp" />
+
+        <!-- Done Button -->
+        <Button
+            android:id="@+id/btnDone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#3F51B5"
+            android:padding="15dp"
+            android:text="Done"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+</ScrollView>

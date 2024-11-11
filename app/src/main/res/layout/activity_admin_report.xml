@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFDE7">
+
+    <!-- Toolbar/Action Bar -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:id="@+id/toolbar"
+        android:background="#FCFE82">
+
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="320dp"
+            android:padding="12dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/tvDailyReportTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="Daily Report"
+            android:textColor="#414037"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+
+        <ImageView
+            android:id="@+id/ivSignOut"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_sign_out" />
+
+    </RelativeLayout>
+
+    <!-- ScrollView for the main content -->
+    <ScrollView
+        android:id="@+id/scrollable_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:layout_above="@id/AdminbottomNavigationView">
+
+        <!-- Wrap all content inside a LinearLayout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Button is visible at first -->
+
+            <!-- Report Title -->
+            <TextView
+                android:id="@+id/tvStudentNameAdmin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp" />
+
+            <!-- Report Date -->
+            <TextView
+                android:id="@+id/tvReportDateAdmin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="16sp"
+                android:paddingBottom="16dp" />
+
+            <!-- Section for Homework (Editable) -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Homework"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/etHomework"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Homework Status"
+                android:paddingBottom="16dp" />
+
+            <!-- Section for Meals (Editable) -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Meals"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/etMeals"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Meals Details"
+                android:paddingBottom="16dp" />
+
+            <!-- Section for Tuition (Editable) -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tuition"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/etTuition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Tuition Status"
+                android:paddingBottom="16dp" />
+
+            <!-- Section for Mood (Editable) -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mood"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/etMood"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Mood Status"
+                android:paddingBottom="16dp" />
+
+            <!-- Section for Performance (Editable) -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Performance"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/etPerformance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Performance Status"
+                android:paddingBottom="16dp" />
+
+            <!-- Section for Today's Activity (Editable) -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Today's Activity"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+
+            <!-- Container for dynamically added images -->
+            <LinearLayout
+                android:id="@+id/images_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp" />
+
+            <Button
+                android:id="@+id/btnAddImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upload Image"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="16dp"
+                android:padding="10dp"
+                android:backgroundTint="#414037"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/btnEditReport"
+                android:layout_width="271dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#3F51B5"
+                android:padding="10dp"
+                android:text="Edit"
+                android:textSize="18sp"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/btnSaveReport"
+                android:layout_width="271dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#3F51B5"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Save Report"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Bottom Navigation -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/AdminbottomNavigationView"
+        style="@style/BottomNavIconSize"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FCFE82"
+        app:menu="@menu/admin_bottom_nav_menu"
+        tools:ignore="VisualLintBottomNav" />
+
+</RelativeLayout>

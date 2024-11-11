@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".DashboardActivity">
+
+    <!-- Top Bar with Dashboard title and notification bell -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FCFE82"
+        android:padding="16dp"
+        android:layout_alignParentTop="true">
+
+        <!-- Dashboard Title -->
+        <TextView
+            android:id="@+id/tvDashboardTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Dashboard"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <!-- Notification Bell Icon -->
+        <ImageView
+            android:id="@+id/ivNotificationBell"
+            android:layout_width="50dp"
+            android:layout_height="52dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="end"
+            android:layout_marginEnd="40dp"
+            android:layout_marginRight="35dp"
+            android:importantForAccessibility="no"
+            android:src="@drawable/ic_notification"
+            tools:ignore="RtlHardcoded" />
+
+        <ImageView
+            android:id="@+id/ivSignOut"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_sign_out" />
+    </RelativeLayout>
+
+    <!-- Container for GridLayout, centers icons in the middle of the screen -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDashboardTitle"
+        android:layout_above="@+id/bottomNavigationView"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="-10dp"
+        tools:ignore="NotSibling">
+
+        <!-- Grid Layout for dashboard icons -->
+        <GridLayout
+            android:id="@+id/gridDashboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alignmentMode="alignMargins"
+            android:columnCount="2"
+            android:padding="16dp"
+            android:rowCount="3"
+            android:layout_gravity="center"
+            android:useDefaultMargins="false"
+            tools:ignore="UselessParent">
+
+            <!-- Daily Timetable Icon -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="25dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                tools:ignore="UseCompoundDrawables">
+                <ImageView
+                    android:id="@+id/ivTimetable"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/ic_timetable"
+                    app:tint="#000" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Daily Timetable"
+                    android:textSize="16sp"
+                    android:textColor="#000"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+
+            <!-- Attendance Icon -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="25dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                tools:ignore="UseCompoundDrawables">
+                <ImageView
+                    android:id="@+id/ivAttendance"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/ic_attendance"
+                    app:tint="#000" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Attendance"
+                    android:textSize="16sp"
+                    android:textColor="#000"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+
+            <!-- Gallery Icon -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="25dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                tools:ignore="UseCompoundDrawables">
+                <ImageView
+                    android:id="@+id/ivKidsInfo"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/ic_info"
+                    app:tint="#000" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kid's Info"
+                    android:textSize="16sp"
+                    android:textColor="#000"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+
+            <!-- Billing Icon -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="25dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                tools:ignore="UseCompoundDrawables">
+                <ImageView
+                    android:id="@+id/ivBilling"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/ic_billing"
+                    app:tint="#000" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Billing"
+                    android:textSize="16sp"
+                    android:textColor="#000"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+
+            <!-- Calendar Icon -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="25dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                tools:ignore="UseCompoundDrawables">
+                <ImageView
+                    android:id="@+id/ivCalendar"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/ic_calendar"
+                    app:tint="#000" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Calendar"
+                    android:textSize="16sp"
+                    android:textColor="#000"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+
+            <!-- Daily Report Icon -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="25dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                tools:ignore="UseCompoundDrawables">
+                <ImageView
+                    android:id="@+id/ivReport"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/ic_report" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Daily Report"
+                    android:textSize="16sp"
+                    android:textColor="#000"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+        </GridLayout>
+    </LinearLayout>
+
+    <!-- Bottom Navigation -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        style="@style/BottomNavIconSize"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:background="#FCFE82"
+        app:menu="@menu/bottom_nav_menu"
+        tools:ignore="VisualLintBottomNav" />
+
+
+</RelativeLayout>
+
+
+
+
+
+
+
